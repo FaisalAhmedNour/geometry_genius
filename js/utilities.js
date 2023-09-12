@@ -17,17 +17,13 @@ function getValue(id){
 }
 function addToCalculationArea(name, area){
     const fullAreaContent = document.createElement('li');
-    fullAreaContent.innerHTML = `<li  class="flex justify-between gap-3 my-2 mr-2">
+    fullAreaContent.innerHTML = `<li  class="flex justify-between gap-3 my-2 mx-4">
                         <div>
                             <span>${name}</span>
                         </div>
                         <div>
                             <span>${area}</span>
                             <span>cm<sup>2</sup></span>
-                        </div>
-                        <div>
-                            <button class="text-sm bg-blue-500 text-white px-2 py-1 rounded">convert to
-                                m<sup>2</sup></button>
                         </div>
                     </li>`;
     document.getElementById('shown-area').appendChild(fullAreaContent);
