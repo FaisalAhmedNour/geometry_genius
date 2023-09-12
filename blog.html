@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-8">
+    <header class="p-4 px-8 border rounded-lg my-10 bg-sky-400 flex justify-between">
+        <div>
+            <h2 class="text-4xl font-bold text-gray-800">Blog</h2>
+        </div>
+        <div class="my-auto">
+            <a href="index.html" class="font-semibold bg-blue-500 text-white px-5 py-1 rounded-lg">Main Page</a>
+        </div>
+    </header>
+    <main>
+        <article class="border rounded p-5 my-5 bg-sky-100">
+            <h3 class="mb-5 text-xl">1. What is DOM and what is the purpose of DOM?</h3>
+            <p>
+                DOM means Document Object Model. It is a document represented as object. It represents the full html
+                page in an object. With it program can add, remove or change the elements, attributes, styles, text and everything in the document.
+            </p>
+        </article>
+        <article class="border rounded p-5 my-5 bg-sky-100">
+            <h3 class="mb-5 text-xl">2. How will you select HTML elements using DOM? Name the DOM methods.</h3>
+            <p>
+                I can select Html elements by many ways like using tag name, class, id etc.
+                Example: document.getElementsByClassName(‘class’);
+            </p>
+            <p>
+                DOM methods:
+                <ol class="list-decimal pl-8">
+                    <li class=" ms-3">getElementsByTagName()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>getElementById()</li>
+                    <li>querySelector()</li>
+                    <li>querySelectorAll()</li>
+                </ol>
+
+            </p>
+        </article>
+        <article class="border rounded p-5 my-5 bg-sky-100">
+            <h3 class="mb-5 text-xl">3. What is event bubble?</h3>
+            <p>
+                Event bubble is a concept in DOM, it happens when any event occurs in an element. First it goes to the innermost element in that element. Then starts climbing up to its parents until the uppermost element.
+            </p>
+        </article>
+        <article class="border rounded p-5 my-5 bg-sky-100">
+            <h3 class="mb-5 text-xl">4. What is a callback function and why will you use it?</h3>
+            <p>
+                Call back function Is a function which is used an argument in another function. By calling it that function completes it actions. <br>
+                I will use call back function to organize my code better and specially for control the sequence of operations. I can also use It for avoiding the repetition of writing the same code.
+            </p>
+        </article>
+    </main>
+</body>
+
+</html>
